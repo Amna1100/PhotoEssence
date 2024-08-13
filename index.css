@@ -1,0 +1,163 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.pad
+{
+   background-image: url('lk.avif');
+   background-size: cover;
+   display: flex;
+    
+   justify-content: center;
+   align-items: center;
+   
+}
+
+header
+{
+ position: fixed;
+ z-index: 1;
+width: 100%;
+height: 18%;
+border: 1px solid #e6e5e5;
+left:  0px ;
+top:0px;
+box-shadow: 0px 5px 13px #a7a4a4;
+  
+
+}
+.logo img
+{
+    position: absolute;
+    top: 30px;
+    left:40px;
+    width: 120px;
+    height:120px;
+
+}
+.logo p 
+{
+    position: absolute;
+    top: 30px;
+    left:180px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:35px;
+}
+.input
+{
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 40px;
+  color: black;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  position: relative;
+  left:1%;
+  text-align: center;
+  filter:drop-shadow(5px 5px  15px #b3b2b2);
+ 
+   
+
+}
+ /* search button */ 
+button
+{
+  position: absolute;
+  left:60%;
+   
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0 -20px 0 32px;
+  width:30px;
+  height: 30px;
+  font-size: 24px;
+  background-color: white;
+}
+ /* search button */ 
+ .search-results
+ {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+ 
+}
+.search-result
+{
+margin-bottom: 60px;
+width: 30%;
+height: 100%;
+border-radius: 5px;
+box-shadow: 0 0 6px rgba(0,0,0,0.2);
+overflow: hidden;
+ 
+}
+.search-result img
+{
+ width: 100%;
+height: 200px;
+object-fit: cover;
+transition: opacity 0.2s ease-in-out;
+
+}
+.search-result img:hover
+{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.search-result a
+{
+  font-size: 15px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.btn2
+{
+ 
+   width: 120px;
+   background-color: rgb(223, 37, 99);
+   border-radius: 5px;
+   display: none;
+   position: absolute;
+   left: 35%;
+   
+}
+.btn2:hover
+{
+  box-shadow:  5px 5px 25px rgb(247, 85, 139);
+  color: white;
+}
+@media screen and (max-width:768px) {
+  .search-results
+  {
+    padding: 20px;
+  }
+  #btn
+  {
+    left:75%;
+  }
+  .search-result {
+width: 45%;
+  }
+}
+@media screen and (max-width:480px) {
+ 
+  .search-result {
+width: 100%;
+  }
+}
+ 
